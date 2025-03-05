@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@font-face {
+   font-family: 'Nunito';
+   src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.nav-style {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: rgb(50, 54, 58);
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding-right: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-style a{
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.nav-style a:hover,
+.nav-style a:focus {
+  text-decoration: underline;
+  color: rgb(186, 160, 210);
+}
+
+.intro {
+  position: relative;
+  display: block;
+}
+
+.intro::before,
+.intro::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(219, 212, 225);
+  z-index: -1;
+  display: block;
+}
+
+.intro::before {
+  width: 100%;
+  height: 82%;
+  top: -30px;
+  left: -30px;
+}
+
+.intro::after {
+  width: 100%;
+  height: 82%;
+  bottom: -30px;
+  right: -30px;
+}
+
+article {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
