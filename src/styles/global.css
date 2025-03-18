@@ -10,10 +10,12 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 section {
@@ -85,4 +87,25 @@ article {
   width: auto;
   justify-content: space-around;
   gap: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-style {
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+  .intro::before {
+    width: 80%;
+    height: 82%;
+    top: -15px;
+    left: -15px;
+  }
+  
+  .intro::after {
+    width: 80%;
+    height: 82%;
+    bottom: -15px;
+    right: -15px;
+  }
 }

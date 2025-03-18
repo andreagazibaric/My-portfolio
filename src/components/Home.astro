@@ -4,17 +4,17 @@ import "../styles/global.css";
 
 <div id="container" class="flex items-center justify-center min-h-screen py-20">
 	<main>
-		<section id="hero" class="flex items-center space-x-24">
-			<img src="/profilepic.jpg" alt="Profilna slika" class="w-48 h-52 rounded-full border-8 border-white shadow-lg" />
-			<div class="intro flex flex-col ml-10 border-16 p-2 border-white backdrop: bg-white">
-				<h2 class="text-l font-bold flex ml-2">Bok, ja sam</h2>
-				<h1 class="text-4xl font-bold">Andrea Gazibarić</h1>
-				<h2 class="text-gray-500">Student</h2>
+		<section id="hero" class="hero flex justify-around items-center space-x-0 lg:space-x-24 md:space-x-16">
+			<img src="/profilepic.jpg" alt="Profilna slika" class="w-32 h-36 rounded-full border-4 border-white shadow-lg md:w-48 md:h-52" />
+			<div class="intro flex flex-col border-2 p-1 border-white backdrop: bg-white md:p-6">
+				<h2 class="text-xs font-bold flex ml-2 md:text-xl">Bok, ja sam</h2>
+				<h1 class="text-l font-bold md:text-3xl">Andrea Gazibarić</h1>
+				<h2 class="text-gray-500 text-sm md:text-xl">Student</h2>
 				<div class="flex justify-center space-x-4 mt-3">
-					<a href="https://www.linkedin.com/in/andrea-gazibaric" target="_blank" class="text-gray-800 hover:text-gray-900 text-3xl">
+					<a href="https://www.linkedin.com/in/andrea-gazibaric" target="_blank" class="text-gray-800 hover:text-gray-900 text-xl md:text-3xl">
 						<i class="fab fa-linkedin"></i>
 					</a>
-					<a href="https://github.com/andreagazibaric" target="_blank" class="text-gray-800 hover:text-gray-900 text-3xl">
+					<a href="https://github.com/andreagazibaric" target="_blank" class="text-gray-800 hover:text-gray-900 text-xl md:text-3xl">
 						<i class="fab fa-github"></i>
 					</a>
 				</div>
@@ -23,7 +23,7 @@ import "../styles/global.css";
 
 		<section id="about" class="mt-30">
 			<h2 class="text-3xl font-bold text-center">O meni</h2>
-			<p class="text-gray-800 mt-6 max-w-2xl">
+			<p class="text-gray-800 mt-6 p-4 text-sm md:max-w-2xl lg:text-xl md:text-lg md:p-0">
 				Bok, zovem se Andrea Gazibarić i trenutno sam studentica 3. godine na Fakultetu elektrotehnike i računarstva u Zagrebu. 
 				Imam dobru teorijsku podlogu u objektno orijentiranim jezicima te web developmentu. <br>
 				Poznajem jezike Java, C, HTML/CSS/JS, SQL te imam osnovna znanja o okruženjima React.js, Astro i Spring Boot. 
@@ -34,11 +34,11 @@ import "../styles/global.css";
 
 		<section id="skills" class="mt-30">
 			<h2 class="text-3xl font-bold text-center">Vještine i certifikati</h2>
-			<div class="flex justify-center flex-col mt-10 max-w-2xl">
-				<div class="flex gap-8 mb-8 mt-8">
+			<div class="flex justify-center flex-col mt-10 md:max-w-2xl">
+				<div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:gap-6 mb-8 mt-8">
 					<div class="flex-1 text-center p-6 border-2 rounded-xl border-gray-700">
 						<h2 class="text-xl text-gray-600 font-bold">Vještine</h2>
-						<div class="flex flex-wrap flex-row gap-12 justify-around text-start mt-4">
+						<div class="flex flex-wrap flex-row gap-8 justify-around text-start mt-4">
 							<article>
 								<div class="flex items-center space-x-2">
 									<i class="fab fa-java"></i>
@@ -107,8 +107,8 @@ import "../styles/global.css";
 
 		<section id="contact" class="mt-30">
 			<h2 class="text-3xl font-bold text-center">Kontakt</h2>
-			<div class="flex justify-center mt-20 max-w-2xl">
-			<div class="flex justify-around text-center gap-24 p-6 border-2 rounded-xl border-gray-600" style="background-color: rgb(234, 228, 239);">
+			<div class="flex justify-center mt-20">
+			<div class="flex justify-around text-center gap-6 p-2 md:gap-24 md:p-6 border-2 rounded-xl border-gray-600" style="background-color: rgb(234, 228, 239);">
 				<article>
 					<div class="flex items-center space-x-2">
 						<i class="far fa-envelope"></i>
