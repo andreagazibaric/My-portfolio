@@ -10,7 +10,11 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  background: linear-gradient(180deg, #f7f3fb 0%, #f4f1f7 100%);
+  color: #1f1f2b;
 }
 
 html {
@@ -18,10 +22,25 @@ html {
   overflow-x: hidden;
 }
 
+main,
+section {
+  width: 100%;
+}
+
+main {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
 section {
   scroll-margin-top: 80px;
   box-sizing: border-box;
   min-height: fit-content;
+  padding-inline: clamp(0.5rem, 1.5vw, 1.5rem);
+}
+
+h1, h2, h3, p, a {
+  margin: 0;
 }
 
 .nav-style {
