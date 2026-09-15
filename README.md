@@ -2,6 +2,10 @@
 
 My personal portfolio website showcasing my projects, skills, experience, and background in software development.
 
+## 📌 About
+
+This portfolio is continuously updated as I work on new projects and develop my skills in web development, software engineering, and other areas of computer science.
+
 ## 🚀 Tech Stack
 
 * **Astro** – static site framework
@@ -63,6 +67,3 @@ To preview the production build locally:
 npm run preview
 ```
 
-## 📌 About
-
-This portfolio is continuously updated as I work on new projects and develop my skills in web development, software engineering, and other areas of computer science.
