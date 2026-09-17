@@ -2,102 +2,128 @@
 import "../styles/global.css";
 ---
 
-<div id="container" class="flex items-center justify-center min-h-screen py-20">
-	<main>
+
+<div id="container" class="flex min-h-screen items-center justify-center px-4 py-24">
+	<main class="w-full">
 		<section id="hero" class="hero flex items-center justify-center gap-6 md:gap-8 lg:gap-10">
-			<img src="/profilepic2.jpeg" alt="Profilna slika" class="w-32 h-36 rounded-full border-4 border-white shadow-lg md:w-48 md:h-52" />
-			<div class="intro ml-2 flex flex-col border-2 p-1 border-white backdrop: bg-white md:ml-46 ml-8 md:p-4">
-				<h1 class="text-l font-bold md:text-3xl">Andrea Gazibarić</h1>
-				<h2 class="text-gray-500 text-sm md:text-xl">Student</h2>
+			<img src="/profilepic2.jpeg" alt="Profilna slika" class="h-36 w-32 rounded-full border-4 border-slate-200/20 shadow-[0_18px_50px_rgba(0,0,0,0.45)] md:h-52 md:w-48" />
+			<div class="intro-wrapper ml-8 md:ml-36">
+			<div class="intro-decoration intro-decoration-before"></div>
+			<div class="intro-decoration intro-decoration-after"></div>
+			<div class="intro flex flex-col rounded-2xl border border-slate-200/10 p-4 text-white md:p-6">
+				<h1 class="text-l font-bold text-white md:text-3xl">Andrea Gazibarić</h1>
+				<h2 class="text-sm text-blue-200 md:text-xl">Student</h2>
 				<div class="mt-2 flex justify-center gap-3 md:gap-5">
-					<a href="https://www.linkedin.com/in/andrea-gazibaric" target="_blank" class="text-gray-800 transition-transform duration-200 hover:scale-110 hover:text-gray-900 text-xl md:text-3xl">
+					<a
+						href="https://www.linkedin.com/in/andrea-gazibari"
+						target="_blank"
+						class="text-xl text-blue-200 transition-transform duration-200 hover:scale-110 hover:text-white md:text-3xl"
+					>
 						<i class="fab fa-linkedin"></i>
 					</a>
-					<a href="https://github.com/andreagazibaric" target="_blank" class="text-gray-800 transition-transform duration-200 hover:scale-110 hover:text-gray-900 text-xl md:text-3xl">
+					<a
+						href="https://github.com/andreagazibaric"
+						target="_blank"
+						class="text-xl text-blue-200 transition-transform duration-200 hover:scale-110 hover:text-white md:text-3xl"
+					>
 						<i class="fab fa-github"></i>
 					</a>
 				</div>
 			</div>
+		</div>
 		</section>
 
 		<section id="about" class="mt-30">
-			<h2 class="text-3xl font-bold text-center">About me</h2>
+			<div class="section-heading">
+				<span class="section-kicker">About</span>
+				<h2 class="text-center text-3xl font-bold text-white">About me</h2>
+			</div>
 			<div class="mx-auto mt-6 max-w-4xl px-4">
-				<p class="text-center text-gray-800 text-sm md:text-lg lg:text-xl md:p-0 leading-relaxed">
+				<p class="surface-card rounded-2xl px-6 py-6 text-center text-sm leading-relaxed text-slate-200 md:px-8 md:py-8 md:text-lg lg:text-xl">
 					Hi, my name is Andrea Gazibarić and I am currently a final-year graduate student at the Faculty of Electrical Engineering and Computing in Zagreb.<br />
 					I have a strong theoretical foundation in object-oriented programming languages and web development.<br />
-					I have experience with Java, C, Python, HTML/CSS/JavaScript, and SQL, as well as knowledge and experience with frameworks and environments such as React.js, Spring Boot, FastAPI, and Astro.<br />
+					I have experience with Java, C, Python, HTML/CSS/JavaScript and SQL, as well as knowledge and experience with frameworks and environments such as React.js, Spring Boot, FastAPI and Astro.<br />
 					Through my education and project work, I have developed a solid understanding of working with REST APIs and gained experience using tools such as Git and Postman.<br />
+					I have also gained practical experience in image annotation and preparing and organizing image datasets for machine learning applications. <br />
 					I am a positive and communicative person who is eager to take on new challenges, expand my existing knowledge and develop new skills.
 				</p>
 			</div>
 		</section>
 
 		<section id="skills" class="mt-30">
-			<h2 class="text-3xl font-bold text-center">Skills and certificates</h2>
+			<div class="section-heading">
+				<span class="section-kicker">What I work with</span>
+				<h2 class="text-center text-3xl font-bold text-white">Skills and certificates</h2>
+			</div>
 			<div class="mx-auto mt-10 w-full max-w-4xl px-4">
 				<div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:gap-6 mb-8 mt-8">
-					<div class="flex-1 text-center p-6 border-2 rounded-xl border-gray-700" style="background-color: rgb(237, 232, 243);">
-						<h2 class="text-xl text-gray-600 font-bold">Skills</h2>
-						<div class="flex flex-wrap flex-row gap-8 justify-around text-start mt-4">
+					<div class="surface-card flex-1 rounded-2xl p-6 text-center">
+						<h2 class="text-xl font-bold text-blue-200">Skills</h2>
+						<div class="mt-5 flex flex-wrap flex-row justify-around gap-4 text-start md:gap-6">
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="fab fa-java"></i>
-									<h3 class="font-bold">Java</h3>
+									<h3 class="font-bold text-white">Java</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="devicon-c-plain"></i>
-									<h3 class="font-bold">C</h3>
+									<h3 class="font-bold text-white">C</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
+									<i class="devicon-python-plain"></i>
+									<h3 class="font-bold text-white">Python</h3>
+								</div>
+							</article>
+							<article>
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="fa-solid fa-database"></i>
-									<h3 class="font-bold">SQL</h3>
+									<h3 class="font-bold text-white">SQL</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="fab fa-html5"></i>
-									<h3 class="font-bold">HTML</h3>
+									<h3 class="font-bold text-white">HTML</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="fab fa-css3-alt"></i>
-									<h3 class="font-bold">CSS</h3>
+									<h3 class="font-bold text-white">CSS</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="fab fa-js"></i>
-									<h3 class="font-bold">JS</h3>
+									<h3 class="font-bold text-white">JS</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="devicon-git-plain"></i>
-									<h3 class="font-bold">Git</h3>
+									<h3 class="font-bold text-white">Git</h3>
 								</div>
 							</article>
 							<article>
-								<div class="flex items-center space-x-2">
+								<div class="flex items-center space-x-2 rounded-full border border-slate-200/10 px-3 py-2 text-slate-100">
 									<i class="devicon-postman-plain"></i>
-									<h3 class="font-bold">Postman</h3>
+									<h3 class="font-bold text-white">Postman</h3>
 								</div>
 							</article>
 						</div>
 					</div>
-					<div class="flex-1 text-center p-6 border-2 rounded-xl border-gray-700" style="background-color: rgb(237, 232, 243);">
-						<h2 class="text-xl text-gray-600 font-bold">Certificates</h2>
-						<div class="flex flex-wrap flex-row gap-10 justify-around text-start mt-4">
+					<div class="surface-card flex-1 rounded-2xl p-6 text-center">
+						<h2 class="text-xl font-bold text-blue-200">Certificates</h2>
+						<div class="mt-5 flex flex-wrap flex-row justify-around gap-10 text-start">
 							<article>
-								<div class="">
+								<div class="rounded-xl border border-slate-200/10 px-4 py-4">
 									<i class="fab fa-aws mr-1"></i>
-									<a href="https://www.credly.com/badges/a44be2e7-fa44-4c6b-9bd8-f545b161c450/public_url" target="_blank" class="font-bold">AWS Certified Cloud Practitioner</a>
-									<p class="italic text-gray-500 text-sm text-end">2025</p>
+									<a href="https://www.credly.com/badges/a44be2e7-fa44-4c6b-9bd8-f545b161c450/public_url" target="_blank" class="font-bold text-white hover:text-blue-200">AWS Certified Cloud Practitioner</a>
+									<p class="text-end text-sm italic text-slate-400">2025</p>
 								</div>
 							</article>
 						</div>
@@ -107,19 +133,22 @@ import "../styles/global.css";
 		</section>
 
 		<section id="experience" class="mt-30">
-			<h2 class="text-3xl font-bold text-center">Experience</h2>
+			<div class="section-heading">
+				<span class="section-kicker">Real life</span>
+				<h2 class="text-center text-3xl font-bold text-white">Experience</h2>
+			</div>
 			<div class="mx-auto mt-10 w-full max-w-4xl px-4">
-				<div class="flex justify-center rounded-xl border-2 border-gray-700 bg-white p-6 text-left md:p-8" style="background-color: rgb(250, 248, 251);">
+				<div class="surface-card flex justify-center rounded-2xl p-6 text-left md:p-8">
 					<div class="flex w-full items-start gap-3 md:gap-4">
-						<i class="fa-solid fa-fire mt-1 text-2xl text-orange-500"></i>
+						<i class="fa-solid fa-fire mt-1 text-2xl text-orange-400"></i>
 						<div class="flex-1">
-							<h3 class="text-xl font-bold text-gray-800 md:text-2xl">Ignit Group</h3>
+							<h3 class="text-xl font-bold text-white md:text-2xl">Ignit Group</h3>
 							<div class="mt-1 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-								<p class="text-base font-semibold text-gray-600 md:text-lg">Junior Developer</p>
-								<p class="text-sm font-medium text-gray-500 md:text-base">May 2026 - Present</p>
+								<p class="text-base font-semibold text-blue-200 md:text-lg">Junior Developer</p>
+								<p class="text-sm font-medium text-slate-400 md:text-base">May 2026 - Present</p>
 							</div>
-							<p class="mt-3 text-sm leading-relaxed text-gray-700 md:text-base">
-								Contributed to the development and improvement of Ignit’s internal web platform, working on frontend and backend tasks, 
+							<p class="mt-3 text-sm leading-relaxed text-slate-200 md:text-base">
+								Contributing to the development and improvement of Ignit’s internal web platform, working on frontend and backend tasks, 
 								implementing new features and optimizing existing functionality in a collaborative team environment.
 								Participating in image annotations and data labeling tasks for machine learning projects, 
 								ensuring high-quality and accurate data for training models. Taking part in code reviews, collaborating with team members 
@@ -132,19 +161,22 @@ import "../styles/global.css";
 		</section>
 
 		<section id="contact" class="mt-30">
-			<h2 class="text-3xl font-bold text-center">Contact</h2>
+			<div class="section-heading">
+				<span class="section-kicker">Reach out</span>
+				<h2 class="text-center text-3xl font-bold text-white">Contact</h2>
+			</div>
 			<div class="flex justify-center mt-20">
-			<div class="flex justify-around text-center gap-6 p-2 md:gap-24 md:p-6 border-2 rounded-xl border-gray-600" style="background-color: rgb(228, 218, 235);">
+			<div class="surface-card flex justify-around text-center gap-6 rounded-2xl p-4 md:gap-24 md:p-6">
 				<article>
 					<div class="flex items-center space-x-2">
 						<i class="far fa-envelope"></i>
-						<h3 class="text-sm font-bold">andrea2011g@gmail.com</h3>
+						<h3 class="text-sm font-bold text-white">andrea2011g@gmail.com</h3>
 					</div>
 				</article>
 				<article>
 					<div class="flex items-center space-x-2">
 						<i class="fab fa-linkedin"></i>
-						<a href="https://www.linkedin.com/in/andrea-gazibaric" target="_blank" class="text-sm font-bold">andrea-gazibaric</a>
+						<a href="https://www.linkedin.com/in/andrea-gazibaric" target="_blank" class="text-sm font-bold text-white hover:text-blue-200">andrea-gazibaric</a>
 					</div>
 				</article>
 				</div>
@@ -155,4 +187,44 @@ import "../styles/global.css";
 </div>
 
 <style>
+.intro-wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+/* svjetliji dijelovi */
+.intro-decoration {
+	position: absolute;
+	width: 100%;
+	height: 82%;
+
+	background-color: rgba(219, 212, 225, 0.12);
+	border: 1px solid rgba(156, 180, 255, 0.14);
+	border-radius: 1rem;
+
+	z-index: 0;
+	pointer-events: none;
+}
+
+.intro-decoration-before {
+	top: -25px;
+	left: -30px;
+}
+
+.intro-decoration-after {
+	bottom: -25px;
+	right: -30px;
+}
+
+/* GLAVNI BOX */
+.intro {
+	position: relative;
+	z-index: 2;
+
+	background: rgba(10, 18, 40, 0.92);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+
+	box-shadow: 0 18px 50px rgba(2, 8, 22, 0.3);
+}
 </style>
