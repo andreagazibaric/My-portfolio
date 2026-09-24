@@ -1,6 +1,7 @@
 # Personal Portfolio
 
 My personal portfolio website showcasing my projects, skills, experience, and background in software development.
+**Live Website:** [View Portfolio](https://main.d23mckr7rtk0qg.amplifyapp.com/)
 
 ## 📌 About
 
