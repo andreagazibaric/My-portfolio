@@ -8,11 +8,11 @@ This portfolio is continuously updated as I work on new projects and develop my 
 
 ## 🚀 Tech Stack
 
-* **Astro** – static site framework
-* **Tailwind CSS** – styling
-* **JavaScript / TypeScript**
-* **HTML / CSS**
-* **Git & GitHub**
+- **Astro** – static site framework
+- **Tailwind CSS** – styling
+- **JavaScript / TypeScript**
+- **HTML / CSS**
+- **Git & GitHub**
 
 ## 📁 Project Structure
 
@@ -66,4 +66,3 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
-

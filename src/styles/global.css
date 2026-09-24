@@ -1,11 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
-   font-family: 'Nunito';
-   src: url('/fonts/Nunito-Regular.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-   font-display: swap;
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -27,7 +27,7 @@ body {
 }
 
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -58,7 +58,11 @@ section {
   padding-inline: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
   margin: 0;
 }
 
@@ -84,7 +88,7 @@ a {
 }
 
 .section-heading::after {
-  content: "";
+  content: '';
   width: min(96px, 20vw);
   height: 2px;
   border-radius: 999px;
@@ -97,7 +101,10 @@ a {
   box-shadow: 0 18px 50px rgba(2, 8, 22, 0.22);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .surface-card:hover {
@@ -124,7 +131,7 @@ a {
   z-index: 20;
 }
 
-.nav-style a{
+.nav-style a {
   padding: 10px 0;
   font-size: 1rem;
   font-weight: bold;
